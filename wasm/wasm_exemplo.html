@@ -1,0 +1,30 @@
+
+<!-- WebAssembly -->
+<script src="wasm/data_genome.js"></script>
+<script>
+    
+            var x;
+            Module.onRuntimeInitialized = async _ => {
+                const api = {
+                    num_genomes: Module.cwrap("num_genomes", "number", ["number"]),
+                    last_data: Module.cwrap("last_date", "string", ["null"]),
+                };
+    //Last update date
+                document.getElementById('dateupdate').innerHTML = api.last_data();     
+    //World 
+                x = api.num_genomes(0);
+                document.getElementById('worldgenomes').innerHTML = x;     
+    //Brasil genomes
+                x = api.num_genomes(1);
+                document.getElementById('brgenomes').innerHTML = x;
+            };
+        
+    //		var genome_data = Module.cwrap("num_genomes", "number", ["number"]);
+    //		var x = genome_data (1);
+    //		document.getElementById("wnum").innerHTML = x;
+    
+    
+</script>
+
+
+    

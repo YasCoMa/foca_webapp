@@ -1,0 +1,16 @@
+button{
+	margin-top: 5px;
+}
+
+.form-outline{
+	margin-top: 5px;
+}
+
+.nav-link{
+	padding-top: 0px !important;
+}
+
+.dataTables_wrapper, .card {
+	margin-top: 15px;
+}
+
