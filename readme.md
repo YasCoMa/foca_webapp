@@ -1,6 +1,6 @@
 # FOCA-APP
 
-Web application illustrating the use of the request functions provided by [FOCA-API](https://github.com/YasCoMa/foca_api.git)
+Web application for covid-19 samples metadata from GISAID, illustrating the use of the request functions provided by [FOCA-API](https://github.com/YasCoMa/foca_api.git)
 
 ## Summary
 FOCA is a web application to analyze samples metadata from gisaid composed of four main components:
